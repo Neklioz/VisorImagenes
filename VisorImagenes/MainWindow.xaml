@@ -1,0 +1,38 @@
+﻿<Window x:Class="VisorImagenes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VisorImagenes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="670" MinWidth="670"
+        Icon="./assets/128.ico">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Bottom" Height="70" Background="LightBlue" LastChildFill="False" Margin="10">
+            <TextBlock DockPanel.Dock="Left" Margin="10" VerticalAlignment="Center" Text="Nº de Imágenes:" FontSize="20" FontFamily="Rubik"></TextBlock>
+            <TextBlock DockPanel.Dock="Left" Margin="10" VerticalAlignment="Center" Text="10" FontSize="20" FontFamily="Rubik"></TextBlock>
+            <TextBlock DockPanel.Dock="Right" Margin="10" VerticalAlignment="Center" Text="Creado por Christian López" FontSize="20" FontFamily="Rubik"></TextBlock>
+        </DockPanel>
+        <Border DockPanel.Dock="Right" BorderBrush="Black" BorderThickness="3" CornerRadius="3" Margin="10">
+            <DockPanel Width="110" Background="LightGreen" LastChildFill="False">
+                <Button DockPanel.Dock="Top" Content="Añadir Imagen" Height="22" Margin="5,5,5,0"></Button>
+                <Button DockPanel.Dock="Top" Content="Eliminar Imagen" Height="22" Margin="5,5,5,0"></Button>
+                <Button DockPanel.Dock="Top" Content="Eliminar Todas" Height="22" Margin="5,5,5,0"></Button>
+
+                <Button DockPanel.Dock="Bottom" Content="Rotar" Height="22" Margin="5,0,5,5"></Button>
+                <Button DockPanel.Dock="Bottom" Content="Recortar" Height="22" Margin="5,5,5,5"></Button>
+            </DockPanel>
+        </Border>
+        <TextBlock DockPanel.Dock="Top"  TextAlignment="Center" Padding="25" Height="100" Text="Visor de imágenes" FontFamily="Rubik" FontSize="40"></TextBlock>
+        <WrapPanel>
+            <Image Source="./assets/episodioIV.jpg" Height="180" Margin="5"></Image>
+            <Image Source="./assets/episodioIV.jpg" Height="180" Margin="5"></Image>
+            <Image Source="./assets/episodioIV.jpg" Height="180" Margin="5"></Image>
+            <Image Source="./assets/episodioIV.jpg" Height="180" Margin="5"></Image>
+            <Image Source="./assets/episodioIV.jpg" Height="180" Margin="5"></Image>
+            <Image Source="./assets/episodioIV.jpg" Height="180" Margin="5"></Image>
+            <Image Source="./assets/episodioIV.jpg" Height="180" Margin="5"></Image>
+            <Image Source="./assets/episodioIV.jpg" Height="180" Margin="5"></Image>
+        </WrapPanel>
+    </DockPanel>
+</Window>
